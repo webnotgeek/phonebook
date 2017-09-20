@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>PhoneBook</title>
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <section class="col-sm-5 col-md-4 col-lg-4  col-xl-3 left">
+            <div>
+                <h3><strong>Add</strong> New Contact</h3>
+                <form action="#" id="add">
+                    <div>
+                        <input type="text" placeholder="Name" id="name" class="from-input" required>
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone Number"  pattern="\d*" maxlength="11"  id="phone" class="from-input" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email Address" id="email" class="from-input" required>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="Add Contact">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section class="col-sm-7 col-md-8 col-lg-8 col-xl-9 right">
+            <div>
+                <h3>Your Current Contacts</h3>
+
+                <div class="search" >
+                    <input type="text" id="search-input"  placeholder="Enter the name you want to look for ..." >
+                </div>
+
+                <div class="phone-book row">
+                   <!-- phonebook addresses will go here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<script src="js/scripts.js"></script>
+<script src="js/scripts-proto.js"></script>
+
+</body>
+</html>
